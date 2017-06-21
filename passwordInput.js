@@ -51,7 +51,6 @@ export default class passwordInput extends Component{
                                autoFocus={true}
                                keyboardType="numeric"
                                onChangeText={(text)=>{this.setState({text});this.props.onChange(text)}}
-                               onEndEditing={(event) =>{this.props.onEndEditing(event)}}
                     />
                     {
                         this._getInputItem()
