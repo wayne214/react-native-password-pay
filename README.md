@@ -15,7 +15,11 @@
 
 ```
  <View>
-     <Password maxLength={6}></Password>
+     <Password maxLength={6}
+               onChange={(value)=> {
+                   console.log('输入的密码：',value)
+               }}
+     />
  </View>
 ```
 
