@@ -46,7 +46,9 @@ export default class passwordInput extends Component{
         return(
             <TouchableHighlight onPress={this._onPress} activeOpacity={1} underlayColor='transparent'>
                 <View style={[styles.container,this.props.style]} >
-                    <TextInput ref={(c) => this._input = c}
+                    <TextInput
+                        style={{height:45,zIndex:99,position:'absolute',width:45*6,opacity:0}}
+                        ref={(c) => this._input = c}
                                maxLength={this.props.maxLength}
                                autoFocus={true}
                                keyboardType="numeric"
